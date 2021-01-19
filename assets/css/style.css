@@ -265,6 +265,7 @@ h1, h2, h3, h4, h5, h6 {
 /* About */
 
 .about {
+    margin-top: 80px;
     display: flex;
     justify-content: space-between;
 
@@ -319,4 +320,40 @@ h1, h2, h3, h4, h5, h6 {
 .about_item:hover .about_text {
     opacity: 1;
     transform: translate(-10px, -10px);
+}
+
+/* Statistics */
+
+.statistics {
+    background-color: #7ec5ff;
+}
+
+.stat {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat_item {
+    flex: 1 1 0;
+    padding: 70px 25px;
+
+    color: #fff;
+    border-left: 1px solid #b8faf4;
+    text-align: center;
+}
+
+.stat_item:last-child {
+    border-right: 1px solid #b8faf4;
+}
+
+.stat_count {
+    margin-bottom: 10px;
+    line-height: 1;
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.stat_text {
+    font-size: 14;
+    text-transform: uppercase;
 }
