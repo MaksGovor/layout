@@ -285,31 +285,37 @@ hr {
 
 }
 
-/* About */
+/* card */
 
-.about {
+.card {
   margin-top: 80px;
   display: flex;
   justify-content: space-between;
-
 }
 
-.about_item {
+.card_item {
   width: 380px;
-  position: relative;
+}
 
+.card_inner {
+  position: relative;
   background-color: #b9a3ff;
 }
 
-.about_item:hover .about_image {
+.card_inner:hover .card_image {
   transform: translate(-10px, -10px);
 }
 
-.about_item:hover .about_image img{
+.card_inner:hover .card_image img{
   opacity: .3;
 }
 
-.about_image {
+.card_inner:hover .card_text {
+  opacity: 1;
+  transform: translate(-10px, -10px);
+}
+
+.card_image {
   background: linear-gradient(
     to bottom, #00fbfb, #a45fff
   );
@@ -317,12 +323,12 @@ hr {
   transition: transform .1s linear;
 }
 
-.about_image img {
+.card_image img {
   display: block;
   transition: opacity .1s linear;
 }
 
-.about_text {
+.card_text {
   width: 100%;
   color: #fff;
   text-transform: uppercase;
@@ -340,9 +346,23 @@ hr {
   transition: transform .1s linear;
 }
 
-.about_item:hover .about_text {
-  opacity: 1;
-  transform: translate(-10px, -10px);
+.card_info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.card_name {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #020202;
+}
+
+.card_prof {
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 300;
+  color: #999;
 }
 
 /* Statistics */
@@ -592,4 +612,49 @@ hr {
 .reviews_btn.reviews_btn--next {
   right: 0;
   transform: rotate(135deg);
+}
+
+/* Social */
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social_item {
+  width: 55px;
+  height: 55px;
+
+  color: #503cff;
+  font-size: 40px;
+  padding: 10px;
+
+  background-color: #7ff7fb;
+  border-right: 1px solid #a25bff;
+  
+  text-decoration: none;
+  line-height: 1;
+
+  transition: background .1s linear, 
+    color .1s linear;
+}
+
+.social_item:last-child {
+  border-right: 0;
+}
+
+.social_item:hover {
+  background-color: #503cff;
+  color:  #7ff7fb;
+}
+
+/* Logos */
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logos_item {
+  
 }
