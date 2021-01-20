@@ -246,6 +246,12 @@ hr {
   background-color: #e8d2ff;
 }
 
+.section-map {
+  background: url('../img/map-bg.jpg') center no-repeat;
+  background-size: cover;
+  padding: 40px 0;
+}
+
 .section.section--clients {
   background: url('../img/clients-bg.jpg') center no-repeat;
   background-size: cover;
@@ -859,4 +865,36 @@ hr {
 
 .blog_stat-item i {
   color: #61a6ff;
+}
+
+/* Map */
+
+.map {
+  text-align: center;
+}
+
+.map_title {
+  font-size: 24px;
+  color: #61a6ff;
+  font-weight: 700;
+}
+
+.map_title a {
+  color: #61a6ff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.map_title a:hover {
+  text-decoration: underline;
+}
+
+.map_title:after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 15px auto 0;
+
+  background-color: #61a6ff;
 }
