@@ -801,7 +801,7 @@ hr {
 }
 
 .blog_date {
-  padding: 20px;
+  padding: 10px 20px;
   background-color: #61a6ff;
   
   font-size: 15px;
@@ -819,9 +819,8 @@ hr {
 .blog_date-day {
   font-size: 30px;
   font-weight: 700;
-  line-height: 1px;
+  line-height: 1;
   font-style: normal;
-  margin-bottom: 10px;
 }
 
 .blog_title a {
