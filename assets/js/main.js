@@ -1,9 +1,46 @@
 $(function() {
 
+  const nav = $('nav');
+  const navHeight = nav.outerHeight();
+
   const header = $('#header');
   const introH = $('#intro').innerHeight();
   let scrollOffset = $(window).scrollTop();
 
+  // Activate sections
+
+  function activateCurrentSection(pos) {
+    let id; 
+    const sections = $('.nav_menu');
+  
+    const lastSection = sections[sections.length-1];
+    const lastSectionTooSmall = $(lastSection).height() < $(window).height();
+  
+    if (lastSectionTooSmall) {
+      const lastSectionTopPos = $(lastSection).offset().top;
+      const lastSectionTriggerPos = $(window).height() + $(document).scrollTop() - ($(lastSection).height()/2);
+      var lastSectionInView = lastSectionTriggerPos > lastSectionTopPos;
+    }
+  
+    if (lastSectionTooSmall && lastSectionInView) {
+      id = $(lastSection).attr('id');
+    } else { 
+  
+      sections.each(function() {
+        const top = $(this).offset().top - navHeight;
+        const bottom = top + $(this).outerHeight();
+  
+        if (pos >= top && pos <= bottom) {
+      id = $(this).attr('id');
+        }
+      });
+    }
+  
+    if (id) {
+      nav.find('a').removeClass('active');
+      nav.find('a[href="#' + id + '"]').addClass('active');
+    }
+  }
 
   // Header fixed
 
@@ -23,6 +60,7 @@ $(function() {
     scrollOffset = $(this).scrollTop();
 
     checkScroll(scrollOffset);
+    activateCurrentSection(scrollOffset);
   });
 
   // Smooth scroll
@@ -31,7 +69,7 @@ $(function() {
     event.preventDefault();
     const link = $(this);
     const blockId = link.data('scroll');
-    const blockOffset = $(blockId).offset().top;
+    const blockOffset = $(blockId).offset().top - navHeight + 5;
 
     $('#nav a').removeClass('active');
     link.addClass('active');
@@ -39,6 +77,9 @@ $(function() {
     $('html, body').animate({
       scrollTop: blockOffset,
     }, 500);
+
+    $('#nav').removeClass('active');
+    $('#nav_toggle').removeClass('active');
   })
 
   // Menu nav toggle
