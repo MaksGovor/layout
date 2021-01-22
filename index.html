@@ -10,21 +10,22 @@
   integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" 
   crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <title>MoGo</title>
 </head>
 <body>
 
-<header class="header">
+<header class="header" id="header">
   <div class="container">
 
     <div class="header_inner">
-      <div class="header_logo">MoGo</div>
-      <nav class="nav">
-        <a class="nav_link active" href="#">About</a>
-        <a class="nav_link" href="#">Servise</a>
-        <a class="nav_link" href="#">Work</a>
-        <a class="nav_link" href="#">Blog</a>
-        <a class="nav_link" href="#">Contact</a>
+      <div class="header_logo" data-scroll="#intro">MoGo</div>
+      <nav class="nav" id="nav">
+        <a class="nav_link" href="#" data-scroll="#about">About</a>
+        <a class="nav_link" href="#" data-scroll="#services">Servise</a>
+        <a class="nav_link" href="#" data-scroll="#works">Work</a>
+        <a class="nav_link" href="#" data-scroll="#blog">Blog</a>
+        <a class="nav_link" href="#" data-scroll="#footer">Contact</a>
         <a class="nav_link" href="#">
           <i class="fas fa-search"></i>
         </a>
@@ -33,7 +34,7 @@
         </a>
       </nav>
 
-      <button class="nav_toggle" type="button">
+      <button class="nav_toggle" id="nav_toggle" type="button">
         <span class="nav_toggle_item">Menu</span>
       </button>
 
@@ -42,7 +43,7 @@
 </header>
 
 <div class="page">
-  <div class="intro">
+  <div class="intro" id="intro">
     <div class="container">
   
       <div class="intro_inner">
@@ -77,7 +78,7 @@
   </div> <!-- intro -->
   
   <!-- About -->
-  <section class="section">
+  <section class="section" id="about">
     <div class="container">
   
       <div class="section_header">
@@ -125,6 +126,7 @@
     </div> <!-- container -->
   </section>
   
+  <!-- Statistics -->
   <div class="statistics">
     <div class="container">
   
@@ -155,7 +157,7 @@
   
   <!-- services -->
   
-  <section class="section">
+  <section class="section" id="services">
     <div class="container">
   
       <div class="section_header">
@@ -269,13 +271,13 @@
         </div>
         <div class="wedo_item">
           <div class="accordion">
-            <div class="accordion_item active">
+            <div class="accordion_item active" data-collapse="#wedo_1">
               <div class="accordion_header">
                 <img src="./assets/img/services/photography.png" 
                 alt="" class="accordion_icon">
                 <div class="accordion_title">Photography</div>
               </div>
-              <div class="accordion_content">
+              <div class="accordion_content" id="wedo_1">
                 Lorem Ipsum is simply dummy text of the printing 
                 and typesetting industry. Lorem Ipsum has been 
                 the industry's standard dummy text ever since 
@@ -286,13 +288,13 @@
                 essentially unchanged.
               </div>
             </div>
-            <div class="accordion_item">
+            <div class="accordion_item" data-collapse="#wedo_2">
               <div class="accordion_header">
                 <img src="./assets/img/services/creativity.png" 
                 alt="" class="accordion_icon">
                 <div class="accordion_title">Creativity</div>
               </div>
-              <div class="accordion_content">
+              <div class="accordion_content" id="wedo_2">
                 Lorem Ipsum is simply dummy text of the printing 
                 and typesetting industry. Lorem Ipsum has been 
                 the industry's standard dummy text ever since 
@@ -303,13 +305,13 @@
                 essentially unchanged.
               </div>
             </div>
-            <div class="accordion_item">
+            <div class="accordion_item" data-collapse="#wedo_3">
               <div class="accordion_header">
                 <img src="./assets/img/services/webdesign.png" 
                 alt="" class="accordion_icon">
                 <div class="accordion_title">Web design</div>
               </div>
-              <div class="accordion_content">
+              <div class="accordion_content" id="wedo_3">
                 Lorem Ipsum is simply dummy text of the printing 
                 and typesetting industry. Lorem Ipsum has been 
                 the industry's standard dummy text ever since 
@@ -326,31 +328,49 @@
     </div> <!-- container -->
   </section>
   
-  <!-- reviews -->
+  <!-- reviews 1 -->
   <div class="section section--grey">
     <div class="container">
       <div class="reviews">
         <a href="#" class="reviews_btn reviews_btn--prev">Prev</a>
         <a href="#" class="reviews_btn reviews_btn--next">Next</a>
-  
-        <div class="reviews_item">
-          <img src="./assets/img/review.jpeg" alt="" class="reviews_photo">
-          <div class="reviews_text">
-            "Lorem Ipsum is simply dummy text of the printing 
-            and typesetting industry. Lorem Ipsum has been 
-            the industry's standard dummy text ever since 
-            the 1500s, when an unknown printer took a 
-            galley of type and scrambled it to make a type 
-            specimen book. It has survived not only five centuries, 
-            but also the leap into electronic typesetting, remaining 
-            essentially unchanged."
+        
+        <div data-slider>
+          <div class="reviews_item">
+            <img src="./assets/img/review.jpeg" alt="" class="reviews_photo">
+            <div class="reviews_text">
+              "Lorem Ipsum is simply dummy text of the printing 
+              and typesetting industry. Lorem Ipsum has been 
+              the industry's standard dummy text ever since 
+              the 1500s, when an unknown printer took a 
+              galley of type and scrambled it to make a type 
+              specimen book. It has survived not only five centuries, 
+              but also the leap into electronic typesetting, remaining 
+              essentially unchanged."
+            </div>
+            <div class="reviews_autor">Maks Govoruha</div>
           </div>
-          <div class="reviews_autor">Maks Govoruha</div>
+
+          <div class="reviews_item">
+            <img src="./assets/img/review.jpeg" alt="" class="reviews_photo">
+            <div class="reviews_text">
+              "Lorem Ipsum is simply dummy text of the printing 
+              and typesetting industry. Lorem Ipsum has been 
+              the industry's standard dummy text ever since 
+              the 1500s, when an unknown printer took a 
+              galley of type and scrambled it to make a type 
+              specimen book. It has survived not only five centuries, 
+              but also the leap into electronic typesetting, remaining 
+              essentially unchanged."
+            </div>
+            <div class="reviews_autor">Maks Anatoliyovich</div>
+          </div>
         </div>
       </div>
     </div>
   </div>
   
+  <!-- team -->
   <section class="section">
     <div class="container">
       <div class="section_header">
@@ -493,7 +513,7 @@
   
   <!-- Works -->
   
-  <section class="section">
+  <section class="section" id="works">
     <div class="container">
       <div class="section_header">
         <h3 class="section_suptitle">What we do</h3>
@@ -583,7 +603,7 @@
   
   </section>
   
-  <!-- reviews -->
+  <!-- reviews 2 -->
   <div class="section">
     <div class="container">
       <div class="reviews">
@@ -675,7 +695,7 @@
   
   
   <!-- blog -->
-  <section class="section">
+  <section class="section" id="blog">
     <div class="container">
       <div class="section_header">
         <h3 class="section_suptitle">Our stories</h3>
@@ -809,7 +829,7 @@
   
   <!-- Footer -->
   
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="container">
   
       <div class="footer_inner">
@@ -943,6 +963,11 @@
     </div> <!-- container -->
   </footer>
 </div> <!-- page -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./assets/js/main.js"></script>
+
 
 </body>
 </html>

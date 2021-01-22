@@ -106,6 +106,7 @@ hr {
 }
 
 .header.fixed {
+  padding: 10px 0;
   background-color: #75a0fdec;
   box-shadow: 0 3px 10px rgba(0, 0, 0, .3);
 
@@ -201,6 +202,10 @@ hr {
   top: 24px;
   right: 24px;
   z-index: 1;
+}
+
+.nav_toggle:focus {
+  outline: 0;
 }
 
 .nav_toggle_item {
@@ -679,6 +684,7 @@ hr {
 }
 
 .reviews_item {
+  min-height: 210px;
   padding-left: 240px;
   position: relative;
 }
@@ -1395,6 +1401,12 @@ hr {
     left: 0;
     background-color: #75a0fdec;
   }
+
+
+  .nav.active {
+    display: block;
+  }
+
 
   .nav_link {
     display: block;
