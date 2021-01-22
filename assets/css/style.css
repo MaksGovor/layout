@@ -50,7 +50,10 @@ hr {
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  min-height: 820px;
   height: 100vh;
+  position: relative;
+
   background: url('../img/intro.png') center no-repeat;
   background-size: cover;
 }
@@ -1273,6 +1276,12 @@ hr {
 }
 
 @media  (max-width: 770px) {
+  
+  /* Intro */
+  
+  .intro {
+    min-height: 650px;
+  }
 
   /* Nav */
   .nav {
