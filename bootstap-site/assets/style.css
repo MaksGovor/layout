@@ -86,7 +86,8 @@
 
 .icon-box {
   padding: 30px 20px;
-  border: 1px solid #eb0423b2;
+  border: 2px solid #eb0423b2;
+  border-radius: 5px;
   height: 100%;
   text-align: center;
 
