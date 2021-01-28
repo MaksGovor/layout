@@ -39,5 +39,69 @@
 
 .hero:before {
   content: '';
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.3);
+  
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.hero .container {
+  position: relative;
+  padding-top: 75px;
+}
+
+.hero h1 {
+  margin: 0;
+
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
+  color: #ffffff;
+  font-family: "Popins", sans-serif;
+}
+
+.hero h2 {
+  margin-top: 10px;
+
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.hero .icon-box h3 {
+  margin-top: 10px;
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.hero .icon-box h3 a {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.icon-box {
+  padding: 30px 20px;
+  border: 1px solid #eb0423b2;
+  height: 100%;
+  text-align: center;
+
+  transition: background .2s linear;
+}
+
+.icon-box:hover{
+  border-color:  #bd0101b2;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.icon-box:hover h3 a {
+  color: #ff0022;
+}
+
+.icon-box:hover svg {
+  fill: #ffffff;
 }
