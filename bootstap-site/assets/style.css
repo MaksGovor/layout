@@ -1,6 +1,10 @@
 
 /* Navbar */
 
+.navigation {
+  background-color: #333333;
+}
+
 .navbar-dark .navbar-nav .nav-link {
   color: #ffffff;
 }
