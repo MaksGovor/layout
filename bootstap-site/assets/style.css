@@ -165,3 +165,78 @@
 .carousel-indicators li{
   background-color: #333333;
 }
+
+/* Team */
+
+.team {
+  padding: 60px;
+}
+
+.member {
+  margin: 0 auto 20px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+
+}
+
+.member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.social {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  right: 0;
+  opacity: 0;
+  
+  transition: opacity 0.2s linear;
+
+}
+
+.social a {
+  width: 35px;
+  height: 35px;
+  margin: 0 3px;
+  padding-top: 5px;
+  display: inline-block;
+  
+  color: #333333;
+  text-decoration: none;
+  font-size: 20px;
+
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.8);    
+
+  transition: background 0.2s linear;
+}
+
+.social a:hover {
+  background: #ff0022;
+}
+
+.member-info {
+  padding: 25px 15px;
+}
+
+.member-info h4 {
+  margin-bottom: 5px;
+  font-size: 15px;
+
+  font-weight: 700;
+}
+
+.member-info span {
+  display: block;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 26px;
+  color: #777777;
+}
+
+.member:hover .social {
+  opacity: 1;
+  bottom: 15px;
+}
