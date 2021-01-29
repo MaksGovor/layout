@@ -155,3 +155,13 @@
   border-color:  #bd0101b2;
   color: #ff0022;
 }
+
+/* Carousel */
+
+.carousel-indicators {
+  bottom: -80px;
+}
+
+.carousel-indicators li{
+  background-color: #333333;
+}
