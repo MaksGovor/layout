@@ -159,7 +159,7 @@
 /* Carousel */
 
 .carousel-indicators {
-  bottom: -80px;
+  bottom: -60px;
 }
 
 .carousel-indicators li{
@@ -169,7 +169,26 @@
 /* Team */
 
 .team {
-  padding: 60px;
+  padding: 10px;
+
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(2, 2, 2, 0.8)), 
+  url(https://i.pinimg.com/originals/27/25/21/2725218f02f0f7b803cc81242088e2c1.jpg)
+  fixed center center;
+  background-size: cover;
+}
+
+.team-title {
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.team-title h2 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.team-title p {
+  font-style: italic;
 }
 
 .member {
@@ -177,7 +196,7 @@
   overflow: hidden;
   border-radius: 5px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
-
+  background: #ffffff;
 }
 
 .member-img {
