@@ -312,3 +312,30 @@
   width: 100%;
   margin: 0 auto;
 }
+
+/* Contact */
+
+.contact-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  float: left;
+  background: #cccccc;
+  border-radius: 4px;
+}
+
+.contact-info h4 {
+  padding-left: 60px;
+
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.contact-info p {
+  padding-left: 60px;
+  font-size: 14px;
+}
