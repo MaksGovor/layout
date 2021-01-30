@@ -94,16 +94,16 @@
   transition: background .2s linear;
 }
 
-.icon-box:hover{
+.icon-hero:hover{
   border-color:  #bd0101b2;
   background: rgba(0, 0, 0, 0.4);
 }
 
-.icon-box:hover h3 a {
+.icon-hero:hover h3 a {
   color: #ff0022;
 }
 
-.icon-box:hover svg {
+.icon-hero:hover svg {
   fill: #ffffff;
 }
 
