@@ -1,6 +1,10 @@
 
 /* Navbar */
 
+.navigation {
+  background-color: #333333;
+}
+
 .navbar-dark .navbar-nav .nav-link {
   color: #ffffff;
 }
@@ -19,4 +23,427 @@
 .btn-outline-dark:hover {
   color: #6d6d6d;
   border-color: #ffffff;
+}
+
+/* Hero */
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url(https://i.pinimg.com/originals/27/25/21/2725218f02f0f7b803cc81242088e2c1.jpg)
+    fixed top center;
+  background-size: cover;
+
+  position: relative;
+}
+
+.hero:before {
+  content: '';
+  background: rgba(0, 0, 0, 0.3);
+  
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.hero .container {
+  position: relative;
+  padding-top: 75px;
+}
+
+.hero h1 {
+  margin: 0;
+
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
+  color: #ffffff;
+  font-family: "Popins", sans-serif;
+}
+
+.hero h2 {
+  margin-top: 10px;
+
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.hero .icon-box h3 {
+  margin-top: 10px;
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.hero .icon-box h3 a {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.icon-box {
+  padding: 30px 20px;
+  border: 2px solid #eb0423b2;
+  border-radius: 5px;
+  height: 100%;
+  text-align: center;
+
+  transition: background .2s linear;
+}
+
+.icon-hero:hover{
+  border-color:  #bd0101b2;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.icon-hero:hover h3 a {
+  color: #ff0022;
+}
+
+.icon-hero:hover svg {
+  fill: #ffffff;
+}
+
+/* About */
+
+.about li {
+  list-style-type: none;
+}
+
+/* Cta */
+
+.cta {
+  padding: 80px 0;
+  width: 100%;
+  height: auto;
+
+  color: #ffffff;
+
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(2, 2, 2, 0.8)), 
+    url(https://i.pinimg.com/originals/27/25/21/2725218f02f0f7b803cc81242088e2c1.jpg)
+    fixed center center;
+  background-size: cover;
+}
+
+.cta h3 {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 8px 28px;
+  margin-top: 10px;
+
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-decoration: none;
+
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+
+  transition: background .2s linear;
+}
+
+.cta-btn:hover {
+  background: rgba(0, 0, 0, 0.4);
+  border-color:  #bd0101b2;
+  color: #ff0022;
+}
+
+/* Carousel */
+
+.carousel-indicators {
+  bottom: -60px;
+}
+
+.carousel-indicators li{
+  background-color: #333333;
+}
+
+/* Team */
+
+.team {
+  padding: 10px;
+
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(2, 2, 2, 0.8)), 
+  url(https://i.pinimg.com/originals/27/25/21/2725218f02f0f7b803cc81242088e2c1.jpg)
+  fixed center center;
+  background-size: cover;
+}
+
+.team-title {
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.team-title h2 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.team-title p {
+  font-style: italic;
+}
+
+.member {
+  margin: 0 auto 20px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+  background: #ffffff;
+}
+
+.member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.social {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  right: 0;
+  opacity: 0;
+  
+  transition: opacity 0.2s linear;
+
+}
+
+.social a {
+  width: 35px;
+  height: 35px;
+  margin: 0 3px;
+  padding-top: 5px;
+  display: inline-block;
+  
+  color: #333333;
+  text-decoration: none;
+  font-size: 20px;
+
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.8);    
+
+  transition: background 0.2s linear;
+}
+
+.social a:hover {
+  background: #ff0022;
+}
+
+.member-info {
+  padding: 25px 15px;
+}
+
+.member-info h4 {
+  margin-bottom: 5px;
+  font-size: 15px;
+
+  font-weight: 700;
+}
+
+.member-info span {
+  display: block;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 26px;
+  color: #777777;
+}
+
+.member:hover .social {
+  opacity: 1;
+  bottom: 15px;
+}
+
+/* Services */
+
+.icon-box-service {
+  border: 1px solid #aa9797;
+  padding: 60px 20px;
+  background: #ffffff;
+  margin-bottom: 20px;
+  height: auto;
+  transition: transform 0.3s linear;
+}
+
+.icon-box-service h4 {
+  margin-bottom: 15px;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.icon-box-service p {
+  margin-bottom: 0;
+
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.icon-box-service:hover {
+  border-color: #cccccc;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.5);
+  transform: translate(-5px, -5px);
+}
+
+.icon-service {
+  margin: 0 auto 20px;
+  width: 64px;
+  height: 64px;
+
+  background: #cccccc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  transition: 0.3s linear;
+}
+
+/* Map */
+
+.map {
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Contact */
+
+.contact-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  float: left;
+  background: #cccccc;
+  border-radius: 4px;
+}
+
+.contact-info h4 {
+  padding-left: 60px;
+
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.contact-info p {
+  padding-left: 60px;
+  font-size: 14px;
+}
+
+/* Footer */
+
+.footer-top {
+  padding: 60px 0 30px;
+
+  border-bottom: 1px solid #6d6d6d;
+  background: #111111;
+  color: #ffffff;
+}
+
+.footer-info {
+  margin-bottom: 30px;
+}
+
+.footer-info h2 {
+  font-size: 28px;
+  padding: 2px 0;
+  margin-bottom: 20px;
+  line-height: 1;
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+.footer-info p {
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.social-links a {
+  width: 46px;
+  height: 46px;
+  margin: 0 3px;
+  display: inline-block;
+
+  text-align: center;
+  text-decoration: none;
+  color: #cccccc;
+  font-size: 32px;
+  border-radius: 4px;
+
+  transition: background 0.2s linear;
+}
+
+.social-links a:hover {
+  color: #111111;
+
+  background: #cccccc;
+}
+
+.footer-top h4 {
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 12px;
+}
+
+.footer-links {
+  margin-bottom: 30px;
+
+  font-size: 18px;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.footer-links a {
+  padding: 0 4px;
+
+  color: #cccccc;
+  text-decoration: none;
+
+  border-radius: 4px;
+
+  transition: background 0.2s linear;
+}
+
+.footer-links a:hover {
+  color: #111111;
+  background-color: #cccccc;
+}
+
+.subscribe {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscribe-btn {
+  margin-left: 2px;
+  color: #333333;
+  background: #cccccc;
+  border-radius: 6px;
+
+  transition: background 0.2s linear;
+}
+
+.subscribe-btn:hover {
+  color: #cccccc;
+  background: #333333;
 }
