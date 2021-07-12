@@ -23,6 +23,10 @@ ul, li {
 	margin: 0;
 }
 
+section {
+	padding-top: 120px;
+}
+
 .container {
 	max-width: 1170px;
 	margin: 0 auto; 
@@ -55,9 +59,16 @@ ul, li {
 	letter-spacing: 0.1em;
 }
 
-.menu li a {
+.nav-link {
 	text-transform: uppercase;
-	font-style: 14px;
+	font-size: 14px;
+
+	-webkit-transition: font-size 150ms ease-in-out;
+          transition: font-size 150ms ease-in-out;
+}
+
+.nav-link:hover {
+	font-size: 16px;
 }
 
 .menu li {
@@ -67,6 +78,13 @@ ul, li {
 .tel {
 	font-size: 17px;
 	margin-left: auto;
+
+	-webkit-transition: font-size 150ms ease-in-out;
+	transition: font-size 150ms ease-in-out;
+}
+
+.tel:hover {
+	font-size: 18px;
 }
 
 .slogan {
@@ -97,10 +115,45 @@ ul, li {
 	border: 1px solid #fff;
 	padding: 17px 47px;
 	width: 300px;
+
 	transition: all 0.5s ease;
 }
 
 .btn:hover {
 	background: #fff;
+	font-size: 18px;
 	color: #000;
+}
+
+.about-header {
+	letter-spacing: 0.1em;
+	font-weight: 900;
+	font-size: 30px;
+}
+
+.description {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 0px;
+}
+
+.description-item {
+	width: 50%;
+	margin-right: 20px;
+}
+
+.description-item h3 {
+	margin-right: 20px;
+	letter-spacing: 0.1em;
+}
+
+.description-item p {
+	font-family: 'Open Sans', sans-serif;
+	text-align: justify;
+}
+
+.photos {
+	display: flex;
+	justify-content: space-between;
+	
 }
